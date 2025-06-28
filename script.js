@@ -8,7 +8,7 @@ form.addEventListener('submit', async (e) => {
   resultDiv.textContent = "Loading...";
 
   try {
-    const response = await fetch('http://127.0.0.1:8000/track', {
+    const response = await fetch('https://reseller-checker-backend.onrender.com/track', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
