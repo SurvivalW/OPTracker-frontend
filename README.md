@@ -1,7 +1,7 @@
 https://survivalw.github.io/OPTracker-frontend/
 
 
-# THIS IS JUST THE FRONTEND
+# THIS IS JUST THE FRONT END
 
 # Practice Project – First Steps in Web Development
 
