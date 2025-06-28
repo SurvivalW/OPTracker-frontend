@@ -23,6 +23,6 @@ form.addEventListener('submit', async (e) => {
     const data = await response.json();
     resultDiv.innerHTML = `<strong>Response:</strong> ${JSON.stringify(data)}`;
   } catch (err) {
-    resultDiv.textContent = "Error: " + err.message;
+    resultDiv.textContent = "Ha you got an error LMAOOOO: " + err.message;
   }
 });
