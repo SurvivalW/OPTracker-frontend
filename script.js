@@ -5,7 +5,13 @@ form.addEventListener('submit', async (e) => {
   e.preventDefault();
 
   const url = document.getElementById('urlInput').value;
-  resultDiv.textContent = "Loading...";
+
+  let dotCount = 1;
+  resultDiv.textContent = 'Loading.';
+  const loadingInterval = setInterval(() => {
+    dotCount = (dotCount % 3) + 1;
+    resultDiv.textContent = 'Loading' + '.'.repeat(dotCount);
+  }, 500);
 
   try {
     const response = await fetch('https://reseller-checker-backend.onrender.com/track', {
